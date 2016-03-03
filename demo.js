@@ -1,7 +1,7 @@
 
 requirejs.config({
   'baseUrl' : 'src' ,
-  // uncomment the following commented-out block to test the contatenated, 
+  // uncomment the following commented-out block to test the contatenated,
   // minified PV version. Grunt needs to be run before for this to work.
   /*
   paths : {
@@ -11,7 +11,7 @@ requirejs.config({
 });
 
 
-// on purpose outside of the require block, so we can inspect the viewer object 
+// on purpose outside of the require block, so we can inspect the viewer object
 // from the JavaScript console.
 var viewer;
 
@@ -284,10 +284,10 @@ $('#load-from-pdb').change(function() {
   });
 });
 
-viewer = pv.Viewer(document.getElementById('viewer'), { 
+viewer = pv.Viewer(document.getElementById('viewer'), {
     width : 'auto', height: 'auto', antialias : true, fog : true,
     outline : true, quality : 'high', style : 'phong',
-    selectionColor : 'white', transparency : 'screendoor', 
+    selectionColor : 'white', transparency : 'screendoor',
     background : '#ccc', animateTime: 500, doubleClick : null
 });
 
